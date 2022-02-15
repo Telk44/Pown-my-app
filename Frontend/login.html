@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+		<title>pown my app</title>
+    </head>
+<body>
+    <form id='form' method="POST" action="/login">
+        <input type="text" id="name"  placeholder="Nom d'utilisateur" />
+        <input type="password" id="password" title="Votre mot de passe" name="password" placeholder="Mot de passe" />
+        <button type="submit" title="Connexion">Connexion</button>                                     
+    </form> 
+    <div id="result"></div>
+    
+</body>
+<script src ="index.js"></script>
+</html>
+<header>
+    <h1>Connexion</h1>
+</header>
+
+<form action="/login" method="POST">
+    <fieldset>
+            
+        <label>Name</label>
+        <input type="text" id="name"  placeholder="Nom d'utilisateur" required>
+        <br><br>
+
+        <label>Password</label>
+        <input type="password" id = "password" name="password" placeholder="Mot de passe" required>
+        <br><br>
+        <button type ="submit">Connexion</button>
+    </fieldset>
+    </form>
+    <br><br>
+    <a id="mylink" href="./signup.html">S'inscrire</a>
+
+</body>
